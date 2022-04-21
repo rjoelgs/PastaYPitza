@@ -3,10 +3,10 @@ import imagen from '../assets/food.jpg'
 
 const Main =()=>{
     return(
-        <>
-           <h2 style={{position:"absolute", color:"white"}}>Ningun hombre esta solo, mientras come Pizza</h2>
+        <div className="main">
+           <h2 className="neon">Open All Day</h2>
            <img src={imagen} alt='restaurante italiano' />
-        </>
+        </div>
     )
 }
 

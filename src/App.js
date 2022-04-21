@@ -1,14 +1,25 @@
-import Header from './containers/Header'
-import Main from './containers/Main'
-import Menu from './containers/Menu'
+import Header from './containers/Header';
+import Footer from './containers/Footer';
+import MainRouter from './containers/MainRouter';
+import { Routes, Route } from "react-router-dom";
+import About from './components/About';
 import './App.css';
+import Reservation from './containers/Reservation';
+
+
+
 
 function App() {
   return (
         <>
           <Header />
-          <Main />
-          <Menu />
+          <Routes>
+            <Route path="/" element={<MainRouter />} />
+            <Route path="about" element={<About />} />
+            <Route path="reservation" element={<Reservation />} />
+          </Routes>
+          <Footer />
+          
         </>)
 }
 
