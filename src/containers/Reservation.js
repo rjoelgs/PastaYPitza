@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import db from '../assets/firebase'
-import {collection, getDocs, query, doc, addDoc, deleteDoc, updateDoc} from 'firebase/firestore/lite'
+import {collection, getDocs, query, doc, addDoc, deleteDoc, updateDoc} from 'firebase/firestore/lite';
+import Reservaciones from '../components/Reservaciones';
+
 
 const Reservation = () => {
     const [objReservation, setObjReservation]= useState({
@@ -43,11 +45,12 @@ const Reservation = () => {
     }
 
   return (
+    <div className='flex'>
     <div className='reservation'>
       <h3>Reserva tu lugar</h3>
       <hr />
 
-      {error &&  <p>todos los campos deben de ser llenados</p>}
+      {error &&  <p id="error">todos los campos deben de ser llenados</p>}
       <form>
         <div className='divForm'>
         <label htmlFor="nombre">Nombre</label>
@@ -73,6 +76,9 @@ const Reservation = () => {
 
       </form>
     </div>
+
+    <Reservaciones />
+  </div>
 
   )
 }

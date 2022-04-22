@@ -3,7 +3,7 @@ import React from 'react';
 const About =()=>{
     return (
         <>
-            <p style={{padding: '20px'}}>ItalianR es un restaurante que se especializa en la comida italiana, creando platos innovadores y deliciosos con los mas altos estándares de calidad.
+            <p id='style'>ItalianR es un restaurante que se especializa en la comida italiana, creando platos innovadores y deliciosos con los mas altos estándares de calidad.
             El compromiso principal de ItalianR es la satisfacción de las necesidades, expectativas y deseos de los clientes al ofrecerles un menú caracterizado por su variedad, sabor inigualable, altos niveles de calidad ademas del excelente servicio.</p>
             <br></br>
             <h3 style={{textAlign: 'center'}}>Encuentranos en la ciudad de Durango</h3>
